@@ -56,6 +56,10 @@ class App extends React.Component {
     }
   };
 
+  render() {
+    if (this.state.error) {
+      return "Error!";
+    }
 
     return (
       <div className="container">
