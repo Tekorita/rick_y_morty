@@ -39,7 +39,7 @@ class App extends React.Component {
 
     try {
       const response = await fetch(
-        `https://rickandmortyapi.com/ai/character/?page=${this.state.nextPage}`
+        `https://rickandmortyapi.com/api/character/?page=${this.state.nextPage}`
       );
       const data = await response.json();
 
