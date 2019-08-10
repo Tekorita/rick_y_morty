@@ -30,6 +30,9 @@ class App extends React.Component {
     nextPage: 1
   };
 
+  componentDidMount() {
+    this.fetchCharacters();
+  }
 
   fetchCharacters = async () => {
     this.setState({ loading: true, error: null });
